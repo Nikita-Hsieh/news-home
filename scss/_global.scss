@@ -8,16 +8,12 @@
 	--color-red: #f15d51;
 	--color-light-grey: #c5c6ce;
 	--color-yellow: #e9aa52;
-	--font-xl: clamp(
-		2.5rem,
-		2.147887323943662rem + 1.5023474178403755vw,
-		3.5rem
-	); //56px, 40px
-	--font-l: clamp(
-		2rem,
-		1.823943661971831rem + 0.7511737089201878vw,
-		2.5rem
-	); //40px, 32px
+	--font-xl: #{clamp(
+			2.5rem,
+			2.147887323943662rem + 1.5023474178403755vw,
+			3.5rem
+		)}; //56px, 40px
+	--font-l: #{clamp(2rem, 1.823943661971831rem + 0.7511737089201878vw, 2.5rem)}; //40px, 32px
 	--font-m: 2rem;
 	--font-s: 1.25rem;
 	--font-xs: 1.125rem;
