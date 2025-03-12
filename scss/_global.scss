@@ -23,3 +23,62 @@
 	--font-xs: 1.125rem;
 	--font-body: 0.9375rem;
 }
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	font-size: var(--font-body);
+	font-family: 'Inter', sans-serif;
+	line-height: 1.7;
+	color: var(--color-grey);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.3125rem;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.1;
+	color: var(--color-blue);
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	width: min(1110px, calc(100% - 2rem));
+	margin-inline: auto;
+}

@@ -5,8 +5,140 @@
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>News Homepage</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
+		<header class="header wrapper">
+			<a href="/">
+				<img
+					class="header__logo"
+					src="/img/logo.svg"
+					alt="Homepage"
+					width="64"
+					height="40"
+				/>
+			</a>
+			<nav>
+				<ul>
+					<li><a class="header__link" href="/">Home</a></li>
+					<li><a class="header__link" href="/">New</a></li>
+					<li><a class="header__link" href="/">Popular</a></li>
+					<li><a class="header__link" href="/">Trending</a></li>
+					<li><a class="header__link" href="/">Categories</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article class="wrapper grid">
+				<section class="feature">
+					<picture>
+						<source
+							media="(min-width: 1024px)"
+							srcset="
+								/img/feature-desktop.png    1x,
+								/img/feature-desktop-2x.png 2x
+							"
+							width="100%"
+							height="auto"
+						/>
+						<img
+							src="/img/feature-mobile.png"
+							srcset="/img/feature-mobile-2x.png 2x"
+							class="feature__image"
+							width="100%"
+							height="auto"
+						/>
+					</picture>
+
+					<h1 class="feature__headline">Amet consectetur adipisicing elit.</h1>
+					<p class="feature__description">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa unde
+						inventore a consectetur, vitae eaque. Magnam quia illo, minima iure
+						nostrum mollitia sapiente quidem placeat provident nihil corrupti
+						aliquam molestiae nisi voluptate atque a temporibus explicabo. Rerum
+						in, voluptas tempora, expedita quo repudiandae non architecto cum
+						adipisci, sint aliquid ullam!
+					</p>
+					<a class="feature__button" href="">Read More</a>
+				</section>
+				<section class="new">
+					<h2 class="new__title">New</h2>
+					<!-- post 1 -->
+					<article class="new__post">
+						<h3>
+							<a class="new__headline" href="">Lorem ipsum dolor sit amet.</a>
+						</h3>
+						<p class="new__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex
+							fuga iste corrupti itaque aliquam tenetur eaque nulla libero
+							labore.
+						</p>
+					</article>
+					<!-- post 2 -->
+					<article class="new__post">
+						<h3>
+							<a class="new__headline" href="">Sit amet consectetur.</a>
+						</h3>
+						<p class="new__description">
+							Consectetur adipisicing elit. Nam, assumenda laudantium tenetur
+							voluptates fuga animi. Asperiores, a!
+						</p>
+					</article>
+					<!-- post 3 -->
+					<article class="new__post">
+						<h3>
+							<a class="new__headline" href=""
+								>Color sit amet consectetur adipisicing.</a
+							>
+						</h3>
+						<p class="new__description">
+							Adipisicing elit. Vero aspernatur dolorem, optio at culpa sequi,
+							in pariatur similique dicta tempore aliquam!
+						</p>
+					</article>
+				</section>
+				<section class="blog">
+					<!-- blog 1 -->
+					<article class="blog__item">
+						<img src="/img/news-1.png" class="blog__image" />
+						<h3 class="blog__number">1</h3>
+						<div class="blog__headline">
+							<a href=""> Lorem ipsum dolor sit amet. </a>
+						</div>
+						<p class="blog__description">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+							consequuntur.
+						</p>
+					</article>
+					<!-- blog 2 -->
+					<article class="blog__item">
+						<img src="/img/news-2.png" class="blog__image" />
+						<h3 class="blog__number">2</h3>
+						<div class="blog__headline">
+							<a href=""> Lorem, ipsum dolor. </a>
+						</div>
+						<p class="blog__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque numquam culpa veniam?
+						</p>
+					</article>
+					<!-- blog 3 -->
+					<article class="blog__item">
+						<img src="/img/news-3.png" class="blog__image" />
+						<h3 class="blog__number">3</h3>
+						<div class="blog__headline">
+							<a href=""> Lorem ipsum dolor sit amet consectetur.</a>
+						</div>
+						<p class="blog__description">lorem9</p>
+					</article>
+				</section>
+			</article>
+		</main>
 		<script type="module" src="/src/main.js"></script>
 	</body>
 </html>

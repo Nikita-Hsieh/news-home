@@ -1,0 +1,22 @@
+@use '../util' as util;
+
+.header {
+	&__logo {
+		width: 2.8125rem;
+
+		@media (width>=1110px) {
+			width: 4rem;
+		}
+	}
+
+	&__link {
+		color: var(--color-blue);
+		font-size: 1.125rem;
+		line-height: 1.3;
+
+		@media (width>=1110px) {
+			font-size: var(--font-body);
+			color: var(--color-grey);
+		}
+	}
+}
