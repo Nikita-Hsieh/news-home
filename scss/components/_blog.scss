@@ -1,0 +1,41 @@
+@use '../util' as util;
+
+.blog {
+	display: grid;
+	gap: 1.875rem;
+
+	&__item {
+		display: grid;
+		grid-template-columns: 100px auto;
+		grid-template-rows: repeat(3, auto);
+		gap: 0.625rem 1.5rem;
+	}
+
+	&__image {
+		grid-row: 1/4;
+	}
+
+	&__number {
+		color: var(--color-light-grey);
+		font-size: var(--font-m);
+		font-weight: 600;
+		line-height: 1;
+	}
+
+	&__headline {
+		display: inline-block;
+		align-self: center;
+
+		a {
+			color: var(--color-blue);
+			font-size: var(--font-xs);
+			font-weight: 700;
+			line-height: 1.1;
+			text-decoration: none;
+		}
+	}
+
+	&__description {
+		align-self: end;
+	}
+}
