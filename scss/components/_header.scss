@@ -1,11 +1,24 @@
 @use '../util' as util;
 
 .header {
+	@media (width>=1110px) {
+		display: flex;
+		justify-content: space-between;
+		padding-block: 5.625rem 3.4375rem;
+	}
+
 	&__logo {
 		width: 2.8125rem;
 
 		@media (width>=1110px) {
 			width: 4rem;
+		}
+	}
+
+	&__links {
+		@media (width>=1110px) {
+			display: flex;
+			gap: 2.5rem;
 		}
 	}
 
