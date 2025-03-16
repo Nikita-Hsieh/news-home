@@ -47,5 +47,9 @@
 		padding: 12px 30px;
 		border-radius: 0.3125rem;
 		letter-spacing: 0.31em;
+
+		&:hover {
+			background-color: var(--color-blue);
+		}
 	}
 }

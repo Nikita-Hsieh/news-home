@@ -31,5 +31,9 @@
 			font-size: var(--font-body);
 			color: var(--color-grey);
 		}
+
+		&:hover {
+			color: var(--color-red);
+		}
 	}
 }

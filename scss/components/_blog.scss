@@ -38,6 +38,10 @@
 			font-weight: 700;
 			line-height: 1.1;
 			text-decoration: none;
+
+			&:hover {
+				color: var(--color-red);
+			}
 		}
 	}
 
