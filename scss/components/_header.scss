@@ -1,9 +1,11 @@
 @use '../util' as util;
 
 .header {
+	padding-block: 1.875rem;
+	display: flex;
+	justify-content: space-between;
+
 	@media (width>=1110px) {
-		display: flex;
-		justify-content: space-between;
 		padding-block: 5.625rem 3.4375rem;
 	}
 
@@ -16,9 +18,11 @@
 	}
 
 	&__links {
-		@media (width>=1110px) {
-			display: flex;
-			gap: 2.5rem;
+		display: flex;
+		gap: 1.5rem;
+
+		@media (max-width: 1099px) {
+			flex-direction: column;
 		}
 	}
 
@@ -27,7 +31,7 @@
 		font-size: 1.125rem;
 		line-height: 1.3;
 
-		@media (width>=1110px) {
+		@media (min-width: 1110px) {
 			font-size: var(--font-body);
 			color: var(--color-grey);
 		}

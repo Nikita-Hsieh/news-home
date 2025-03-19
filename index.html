@@ -23,14 +23,57 @@
 					height="40"
 				/>
 			</a>
-			<nav>
-				<ul class="header__links">
-					<li><a class="header__link" href="/">Home</a></li>
-					<li><a class="header__link" href="/">New</a></li>
-					<li><a class="header__link" href="/">Popular</a></li>
-					<li><a class="header__link" href="/">Trending</a></li>
-					<li><a class="header__link" href="/">Categories</a></li>
-				</ul>
+			<nav class="nav" aria-label="Site">
+				<button
+					id="btnOpen"
+					class="nav__open"
+					aria-expanded="false"
+					aria-labelledby="nav-label"
+				>
+					<span id="nav-label" hidden>Navigation</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						aria-hidden="true"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				</button>
+				<div class="nav__content">
+					<button id="btnClose" class="nav__close">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<line x1="18" y1="6" x2="6" y2="18"></line>
+							<line x1="6" y1="6" x2="18" y2="18"></line>
+						</svg>
+					</button>
+					<ul class="header__links">
+						<li><a class="header__link" href="/">Home</a></li>
+						<li><a class="header__link" href="/">New</a></li>
+						<li><a class="header__link" href="/">Popular</a></li>
+						<li><a class="header__link" href="/">Trending</a></li>
+						<li><a class="header__link" href="/">Categories</a></li>
+					</ul>
+				</div>
+				<div class="nav__overlay" aria-hidden="true"></div>
 			</nav>
 		</header>
 		<main>
@@ -55,50 +98,50 @@
 						/>
 					</picture>
 
-					<h1 class="feature__headline">Amet consectetur adipisicing elit.</h1>
+					<h1 class="feature__headline">Next-Gen Tech 2025</h1>
 					<div class="feature__description">
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-							minima iure nostrum mollitia sapiente quidem placeat provident
-							nihil corrupti aliquam molestiae nisi voluptate atque a non
-							architecto cum adipisci, sint aliquid ullam!
+							Innovation is accelerating in 2025, with AI, blockchain, and
+							quantum computing reshaping industries. Companies are pushing the
+							boundaries of automation, cybersecurity, and sustainable
+							technology.
 						</p>
 						<a class="feature__button" href="">Read More</a>
 					</div>
 				</section>
 				<section class="new">
-					<h2 class="new__title">New</h2>
+					<h2 class="new__title">Latest</h2>
 					<!-- post 1 -->
 					<article class="new__post">
 						<h3>
-							<a class="new__headline" href="">Lorem ipsum dolor sit amet.</a>
+							<a class="new__headline" href="/"
+								>Apple Unveils AI-Powered Smart Glasses
+							</a>
 						</h3>
 						<p class="new__description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex
-							fuga iste corrupti itaque aliquam tenetur eaque nulla libero
-							labore.
+							A game-changer in augmented reality and digital connectivity.
 						</p>
 					</article>
 					<!-- post 2 -->
 					<article class="new__post">
 						<h3>
-							<a class="new__headline" href="">Sit amet consectetur.</a>
+							<a class="new__headline" href="/"
+								>Tesla's Self-Driving Taxi Fleet Goes Live
+							</a>
 						</h3>
 						<p class="new__description">
-							Consectetur adipisicing elit. Nam, assumenda laudantium tenetur
-							voluptates fuga animi. Asperiores, a!
+							Fully autonomous vehicles are now operating in select cities.
 						</p>
 					</article>
 					<!-- post 3 -->
 					<article class="new__post">
 						<h3>
-							<a class="new__headline" href=""
-								>Color sit amet consectetur adipisicing.</a
+							<a class="new__headline" href="/"
+								>NASA Confirms First Quantum Satellite Launch</a
 							>
 						</h3>
 						<p class="new__description">
-							Adipisicing elit. Vero aspernatur dolorem, optio at culpa sequi,
-							in pariatur similique dicta tempore aliquam!
+							A major step toward unhackable global communications.
 						</p>
 					</article>
 				</section>
@@ -108,11 +151,11 @@
 						<img src="/img/news-1.png" class="blog__image" />
 						<h3 class="blog__number">01</h3>
 						<div class="blog__headline">
-							<a href="">Lorem ipsum dolor sit amet. </a>
+							<a href="/">The Rise of AI in Daily Life </a>
 						</div>
 						<p class="blog__description">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
-							consequuntur.
+							How artificial intelligence is seamlessly integrating into
+							healthcare, finance, and personal productivity.
 						</p>
 					</article>
 					<!-- blog 2 -->
@@ -120,11 +163,11 @@
 						<img src="/img/news-2.png" class="blog__image" />
 						<h3 class="blog__number">02</h3>
 						<div class="blog__headline">
-							<a href="">Lorem, ipsum dolor. </a>
+							<a href="">Blockchain Beyond Crypto</a>
 						</div>
 						<p class="blog__description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Doloremque numquam culpa veniam?
+							Exploring how blockchain is revolutionizing supply chains, voting
+							systems, and cybersecurity.
 						</p>
 					</article>
 					<!-- blog 3 -->
@@ -132,10 +175,11 @@
 						<img src="/img/news-3.png" class="blog__image" />
 						<h3 class="blog__number">03</h3>
 						<div class="blog__headline">
-							<a href="">Lorem ipsum dolor sit amet consectetur.</a>
+							<a href="">Green Tech Innovations</a>
 						</div>
 						<p class="blog__description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia!
+							The latest breakthroughs in renewable energy, electric vehicles,
+							and sustainable AI computing.
 						</p>
 					</article>
 				</section>

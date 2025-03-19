@@ -1,0 +1,45 @@
+@use '../util' as util;
+
+.nav {
+	button {
+		background: none;
+		border: none;
+		padding: 0;
+
+		@media (width >= 1110px) {
+			display: none;
+		}
+	}
+
+	&__open {
+	}
+
+	&__content {
+		@media (max-width: 1109px) {
+			display: none;
+			position: fixed;
+			inset: 0 0 0 auto;
+			background-color: var(--color-white);
+			padding: 1.875rem;
+			width: 60%;
+			z-index: 1;
+			translate: 100vw 0;
+			transition: translate 350ms ease-in-out;
+		}
+	}
+
+	&__close {
+		display: block;
+		margin-inline-start: auto;
+		margin-block-end: 5.375rem;
+	}
+
+	&__overlay {
+		display: none;
+		position: fixed;
+		inset: 0;
+		background-color: var(--color-blue);
+		opacity: 0;
+		transition: opacity 150ms ease-in-out;
+	}
+}
