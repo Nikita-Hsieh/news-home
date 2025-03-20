@@ -2,6 +2,7 @@
 
 .nav {
 	button {
+		cursor: pointer;
 		background: none;
 		border: none;
 		padding: 0;
@@ -11,7 +12,14 @@
 		}
 	}
 
-	&__open {
+	&__open[aria-expanded='true'] {
+		~ .nav__content {
+			translate: 0;
+		}
+
+		~ .nav__overlay {
+			opacity: 0.5;
+		}
 	}
 
 	&__content {
@@ -41,5 +49,6 @@
 		background-color: var(--color-blue);
 		opacity: 0;
 		transition: opacity 150ms ease-in-out;
+		pointer-events: none;
 	}
 }
