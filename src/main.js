@@ -4,7 +4,7 @@ const btnOpen = document.querySelector('#btnOpen')
 const btnClose = document.querySelector('#btnClose')
 const media = window.matchMedia('(max-width: 1110px)')
 const navContent = document.querySelector('.nav__content')
-const navOverlay = document.querySelector('.nav__overlay ')
+const navOverlay = document.querySelector('.nav__overlay')
 
 function openMobileMenu() {
 	btnOpen.setAttribute('aria-expanded', 'true')
@@ -21,6 +21,8 @@ function setupNav(e) {
 			navOverlay.style.display = 'block'
 		}, 500)
 	} else {
+		navContent.style.display = ''
+		navOverlay.style.display = ''
 	}
 }
 
