@@ -32,3 +32,9 @@ btnClose.addEventListener('click', closeMobileMenu)
 media.addEventListener('change', function (e) {
 	setupNav(e)
 })
+
+document.querySelectorAll('a').forEach((a) => {
+	a.addEventListener('click', (e) => {
+		e.preventDefault()
+	})
+})
